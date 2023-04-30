@@ -1,0 +1,52 @@
+# Font configuration
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: Jetbrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+
+  size: 12.0
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # Default colors
+  primary:
+    background: '#211C1C'
+    foreground: '#F7F1FF'
+
+  # Normal colors
+  normal:
+    black:   '#403E41'
+    red:     '#FC618D'
+    green:   '#7BD88F'
+    yellow:  '#FCE566'
+    blue:    '#FD9353'
+    magenta: '#948AE3'
+    cyan:    '#5AD4E6'
+    # white:   '#FCFCFA'
+    white:   '#F7F1FF'
+
+  # Bright colors
+  bright:
+    black:   '#403E41'
+    red:     '#FC618D'
+    green:   '#7BD88F'
+    yellow:  '#FCE566'
+    blue:    '#FD9353'
+    magenta: '#948AE3'
+    cyan:    '#5AD4E6'
+    # white:   '#FCFCFA'
+    white:   '#F7F1FF'

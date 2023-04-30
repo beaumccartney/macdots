@@ -1,0 +1,13 @@
+[user]
+	email = mccartney.beausl@gmail.com
+	name  = Beau McCartney
+[init]
+	defaultBranch = main
+[rebase]
+	autoStash = true
+[push]
+	default = current
+[github]
+	user = BeauSLM
+[gitlab]
+	user = BeauSLM

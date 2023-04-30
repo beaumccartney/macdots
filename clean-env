@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+pushd $DOTFILES
+echo "Removing configs"
+stow -D stow_folder
+popd
+
