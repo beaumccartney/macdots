@@ -1,6 +1,9 @@
 set fish_greeting
 
+fish_add_path $HOME/.local/bin
+
 eval $(/opt/homebrew/bin/brew shellenv)
+
 bass source ~/.zshenv
 
 if not status is-interactive
