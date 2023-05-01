@@ -2,6 +2,3 @@ add_newline = false
 
 [nodejs]
 format = "via [⬢ $version](bold green) "
-
-[c]
-commands = [["clang", "--version"]]
