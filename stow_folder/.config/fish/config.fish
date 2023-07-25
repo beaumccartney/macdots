@@ -19,6 +19,16 @@ set fish_cursor_visual      block
 
 set fish_color_command green --bold
 
+# pnpm
+set -gx PNPM_HOME "/Users/beaum/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+abbr npm pnpm
+abbr npx pnpx
+
 alias e $VISUAL
 
 alias mkdir 'mkdir -p'
