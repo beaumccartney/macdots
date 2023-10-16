@@ -1,10 +1,20 @@
 set fish_greeting
 
-fish_add_path $HOME/.local/bin
+bass source ~/.zshenv
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ;
+
+set --export BUN_INSTALL "$HOME/.bun"
+
+set --export PYENV_ROOT $HOME/.pyenv
+
+set --export CARGO_TARGET_DIR $HOME/.cache/cargo-target
+
+set --export RIPGREP_CONFIG_PATH $DOTFILES/ripgrepconfig
+
+fish_add_path $HOME/.local/bin $BUN_INSTALL/bin $PYENV_ROOT/bin $HOME/.cabal/bin /Users/beaum/.ghcup/bin
 
 eval $(/opt/homebrew/bin/brew shellenv)
-
-bass source ~/.zshenv
 
 if not status is-interactive
     exit
@@ -37,10 +47,17 @@ alias ls 'exa'
 alias ll 'exa -la --git'
 alias lmr 'll  --sort=time --reverse'
 
+alias zigup 'zigup --install-dir ~/thirdparty/zig'
+
 alias dungeon '~/dungeon-note/dungeon.py'
 
 abbr lg 'lazygit'
 
+pyenv init - | source
+
 zoxide init fish | source
 
+fnm env --use-on-cd | source
+
 starship init fish | source
+
