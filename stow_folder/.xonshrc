@@ -1,6 +1,6 @@
 # path things
 source-bash $(/usr/libexec/path_helper -s)
-source-bash ~/.zprofile
+# source-bash ~/.zprofile
 source-bash ~/.zshenv
 
 # don't type cd anymore wooo
@@ -23,7 +23,7 @@ $VI_MODE = True
 $XONSH_HISTORY_BACKEND = 'sqlite'
 
 # TODO: xxh
-xontrib load jump_to_dir fish_completer abbrevs omx_git prompt_starship
+xontrib load fish_completer abbrevs omx_git
 
 aliases['e'] = $VISUAL
 
@@ -32,4 +32,9 @@ aliases['mkdir'] = 'mkdir -p'
 aliases['ls' ] = 'exa'
 aliases['ll' ] = 'exa -la --git'
 aliases['lt' ] = 'exa --sort=time --reverse'
-aliases['lmr'] = 'll  --sort=time --reverse'
+aliases['lmr'] = 'll --sort=time --reverse'
+
+aliases['zigup'] = 'zigup --install-dir ~/thirdparty/zig'
+
+execx($(starship init xonsh))
+execx($(zoxide init xonsh), 'exec', __xonsh__.ctx, filename='zoxide')
