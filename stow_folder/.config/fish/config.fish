@@ -23,8 +23,8 @@ alias e $VISUAL
 
 alias mkdir 'mkdir -p'
 
-alias ls 'exa'
-alias ll 'exa -la --git'
+alias ls 'eza'
+alias ll 'eza -la --git'
 alias lmr 'll  --sort=time --reverse'
 
 alias zigup 'zigup --install-dir ~/thirdparty/zig'
