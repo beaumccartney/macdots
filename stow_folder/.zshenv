@@ -14,4 +14,6 @@ export RIPGREP_CONFIG_PATH="$DOTFILES/ripgrepconfig"
 
 export PNPM_HOME="$HOME/Library/pnpm"
 
-export PATH="$HOME/.local/bin:$(brew --prefix llvm)/bin:$BUN_INSTALL/bin:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PNPM_HOME:$PATH"
+export ODIN_ROOT="$HOME/thirdparty/Odin"
+
+export PATH="$HOME/.local/bin:$(brew --prefix llvm)/bin:$BUN_INSTALL/bin:$PNPM_HOME:$PATH:$(brew --prefix python)/libexec/bin"

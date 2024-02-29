@@ -11,8 +11,8 @@ if not status is-interactive
 end
 
 fish_vi_key_bindings
-set fish_vi_force_cursor 1
 fish_vi_cursor
+set fish_cursor_insert line
 
 set fish_color_command green --bold
 
@@ -20,11 +20,9 @@ alias e $VISUAL
 
 alias mkdir 'mkdir -p'
 
-alias ls 'eza'
+alias ls 'eza --oneline'
 alias ll 'eza -la --git'
-alias lmr 'll  --sort=time --reverse'
-
-alias zigup 'zigup --install-dir ~/thirdparty/zig'
+alias lmr 'll --sort=time --reverse'
 
 abbr lg 'lazygit'
 
