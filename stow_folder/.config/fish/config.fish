@@ -18,6 +18,8 @@ set fish_color_command green --bold
 
 alias e $VISUAL
 
+alias fd "fd --hidden --no-ignore-vcs --follow"
+
 alias mkdir 'mkdir -p'
 
 alias ls 'eza --oneline'
