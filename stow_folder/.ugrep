@@ -1,2 +1,3 @@
 smart-case
 hidden
+exclude-dir=node_modules
