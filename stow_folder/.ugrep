@@ -1,3 +1,6 @@
 smart-case
 hidden
 exclude-dir=node_modules
+exclude-dir=.git
+exclude=package-lock.json
+ignore-binary
