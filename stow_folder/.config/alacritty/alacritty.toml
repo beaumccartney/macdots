@@ -1,0 +1,41 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black   = "#403E41"
+blue    = "#FD9353"
+cyan    = "#5AD4E6"
+green   = "#7BD88F"
+magenta = "#948AE3"
+red     = "#FC618D"
+white   = "#F7F1FF"
+yellow  = "#FCE566"
+
+[colors.normal]
+black   = "#403E41"
+blue    = "#FD9353"
+cyan    = "#5AD4E6"
+green   = "#7BD88F"
+magenta = "#948AE3"
+red     = "#FC618D"
+white   = "#F7F1FF"
+yellow  = "#FCE566"
+
+[colors.primary]
+background = "#211C1C"
+# background = "#000000"
+foreground = "#F7F1FF"
+
+[font]
+size = 12.0
+
+normal.family      = "JetBrainsMono Nerd Font Mono"
+bold.family        = "JetBrainsMono Nerd Font Mono"
+italic.family      = "JetBrainsMono Nerd Font Mono"
+bold_italic.family = "JetBrainsMono Nerd Font Mono"
+
+[shell]
+program = "/opt/homebrew/bin/fish"
+
+[window]
+option_as_alt = "OnlyLeft"
