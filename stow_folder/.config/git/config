@@ -19,5 +19,20 @@
 [core]
 	longpaths = true
 
+        pager = delta
+
 [commit]
-    verbose = true
+        verbose = true
+
+[interactive]
+        diffFilter = delta --color-only
+
+[delta]
+        navigate = true
+        features = side-by-side line-numbers decorations
+
+[merge]
+        conflictstyle = diff3
+
+[diff]
+        colorMoved = default
