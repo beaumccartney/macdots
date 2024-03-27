@@ -22,7 +22,7 @@ alias fd "fd --hidden --no-ignore-vcs --follow"
 
 alias mkdir 'mkdir -p'
 
-alias ls 'eza --oneline'
+alias ls 'eza --all --oneline'
 alias ll 'eza -la --git'
 alias lmr 'll --sort=time --reverse'
 
