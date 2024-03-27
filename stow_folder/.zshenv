@@ -6,7 +6,7 @@ export DOTFILES=$HOME/macdots
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="nvimpager"
 
 export BUN_INSTALL="$HOME/.bun"
 export CARGO_TARGET_DIR="$HOME/.cache/cargo-target"
