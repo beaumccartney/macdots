@@ -28,6 +28,10 @@ alias lmr 'll --sort=time --reverse'
 
 abbr lg 'lazygit'
 
+function dequarantine --wraps rm --description 'dequarantine passsed files/dirs'
+    sudo xattr -d -r com.apple.quarantine (dirname $argv)
+end
+
 zoxide init fish | source
 
 fnm env --use-on-cd | source
