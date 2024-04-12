@@ -1,6 +1,8 @@
 [user]
 	email = mccartney.beausl@gmail.com
 	name  = Beau McCartney
+	; NOTE: use this when I want to enforce setting email per-repo
+	; useConfigOnly  = true
 [init]
 	defaultBranch = main
 [rebase]
@@ -18,7 +20,7 @@
 	required = true
 [core]
 	longpaths = true
-
+        compression = 0
         pager = delta
 
 [commit]
@@ -36,7 +38,23 @@
 
 [diff]
         colorMoved = default
+        mnemonicPrefix = true
+        renames = copies
+        algorithm = histogram
 [extensions]
 	worktreeConfig = true
 [pull]
 	ff = only
+[advice]
+	detachedHead = false
+[fetch]
+	writeCommitGraph = true
+	prune = true
+	pruneTags = true
+[rerere]
+        enabled = true
+        autoUpdate = true
+[alias]
+	reword = commit --amend --only
+	ff = merge --ff-only
+	noff = merge --no-ff
