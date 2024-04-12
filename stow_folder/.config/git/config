@@ -38,3 +38,5 @@
         colorMoved = default
 [extensions]
 	worktreeConfig = true
+[pull]
+	ff = only
