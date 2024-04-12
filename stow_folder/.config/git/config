@@ -36,3 +36,5 @@
 
 [diff]
         colorMoved = default
+[extensions]
+	worktreeConfig = true
