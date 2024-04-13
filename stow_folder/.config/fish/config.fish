@@ -28,6 +28,11 @@ alias lmr 'll --sort=time --reverse'
 
 abbr lg 'lazygit'
 
+# git aliases
+abbr grw 'git reword'
+abbr gff 'git ff'
+abbr gnoff 'git noff'
+
 function dequarantine --wraps rm --description 'dequarantine passsed files/dirs'
     sudo xattr -d -r com.apple.quarantine (dirname $argv)
 end
