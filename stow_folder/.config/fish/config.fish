@@ -13,16 +13,6 @@ fish_add_path   --move                                \
                 "$(brew --prefix python)/libexec/bin" \
                 "$PNPM_HOME"
 
-if not status is-interactive
-    exit
-end
-
-fish_vi_key_bindings
-fish_vi_cursor
-set fish_cursor_insert line
-
-set fish_color_command green --bold
-
 alias e $VISUAL
 
 alias fd "fd --hidden --no-ignore-vcs --follow"
@@ -44,13 +34,6 @@ function dequarantine --wraps rm --description 'dequarantine passsed files/dirs'
     sudo xattr -d -r com.apple.quarantine (dirname $argv)
 end
 
-zoxide init fish | source
-
-fnm env --use-on-cd | source
-
-starship init fish | source
-
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/homebrew/Caskroom/miniforge/base/bin/conda
@@ -63,3 +46,17 @@ else
     end
 end
 # <<< conda initialize <<<
+
+if not status is-interactive
+    exit
+end
+
+fish_vi_key_bindings
+fish_vi_cursor
+set fish_cursor_insert line
+
+set fish_color_command green --bold
+
+zoxide init fish | source
+
+starship init fish | source
