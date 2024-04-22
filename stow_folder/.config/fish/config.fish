@@ -6,6 +6,13 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ;
 
 eval (/opt/homebrew/bin/brew shellenv)
 
+# ensure these are prepended on $PATH
+fish_add_path   --move                                \
+                "$HOME/.local/bin"                    \
+                "$(brew --prefix llvm)/bin"           \
+                "$(brew --prefix python)/libexec/bin" \
+                "$PNPM_HOME"
+
 if not status is-interactive
     exit
 end
