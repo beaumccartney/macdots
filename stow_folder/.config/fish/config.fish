@@ -9,6 +9,7 @@ eval (/opt/homebrew/bin/brew shellenv)
 # ensure these are prepended on $PATH
 fish_add_path   --move                                \
                 "$HOME/.local/bin"                    \
+                "(go env GOPATH)/bin"                 \
                 "$(brew --prefix llvm@17)/bin"        \
                 "$(brew --prefix python)/libexec/bin" \
                 "$PNPM_HOME"
