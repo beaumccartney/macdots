@@ -14,6 +14,9 @@ fish_add_path   --move                                \
                 "$(brew --prefix python)/libexec/bin" \
                 "$PNPM_HOME"
 
+# opam configuration
+source /Users/beaum/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+
 alias e $VISUAL
 
 alias fd "fd --hidden --no-ignore-vcs --follow"
