@@ -2,7 +2,14 @@ set fish_greeting
 
 bass source ~/.zshenv
 
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ;
+set -x EDITOR "nvim"
+set -x VISUAL "nvim"
+
+set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+
+set -x RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
+
+set -x PNPM_HOME "$HOME/Library/pnpm"
 
 eval (/opt/homebrew/bin/brew shellenv)
 
