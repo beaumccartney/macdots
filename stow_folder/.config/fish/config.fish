@@ -35,6 +35,7 @@ alias la 'eza --all --oneline'
 alias ll 'eza -la --git'
 alias lmr 'll --sort=time --reverse'
 
+abbr g 'git'
 abbr lg 'lazygit'
 
 # git aliases

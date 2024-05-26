@@ -55,6 +55,48 @@
         enabled = true
         autoUpdate = true
 [alias]
+	s      = status --short
+	sb     = status --short --branch
+	st     = status
+
+	co     = checkout
+	cob    = checkout -b
+	b      = branch -vv
+	ba     = branch -vva
+	bd     = branch --delete
+
+	a      = add
+	aa     = add --all
+	rs     = restore
+	rst    = restore --staged
+
+	c      = commit
+	ca     = commit --all
+	amend  = commit --amend
 	reword = commit --amend --only
-	ff = merge --ff-only
-	noff = merge --no-ff
+
+	d      = diff
+	ds     = diff --stat
+	dc     = diff --cached
+	dcs    = diff --cached --stat
+	dw     = diff --word-diff
+	dcw    = diff --cached --word-diff
+
+	y      = pull
+	yr     = pull --rebase
+	p      = push
+	pf     = push --force-with-lease
+	fa     = fetch --all --prune
+
+	r      = remote -v
+
+	w      = worktree
+	wa     = worktree add
+	wl     = worktree list
+	wp     = worktree prune
+	wm     = worktree move
+	wr     = worktree remove
+
+	l      = log
+	ls     = log --stat
+	lo     = log --oneline --decorate --color --graph
