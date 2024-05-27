@@ -20,27 +20,27 @@
 	required = true
 [core]
 	longpaths = true
-        compression = 0
-        pager = delta
+	compression = 0
+	pager = delta
 
 [commit]
-        verbose = 2
+	verbose = 2
 
 [interactive]
-        diffFilter = delta --color-only
+	diffFilter = delta --color-only
 
 [delta]
-        navigate = true
-        features = side-by-side line-numbers decorations
+	navigate = true
+	features = side-by-side line-numbers decorations
 
 [merge]
-        conflictstyle = diff3
+	conflictstyle = diff3
 
 [diff]
-        colorMoved = default
-        mnemonicPrefix = true
-        renames = copies
-        algorithm = histogram
+	colorMoved = default
+	mnemonicPrefix = true
+	renames = copies
+	algorithm = histogram
 [extensions]
 	worktreeConfig = true
 [pull]
@@ -52,8 +52,8 @@
 	prune = true
 	pruneTags = true
 [rerere]
-        enabled = true
-        autoUpdate = true
+	enabled = true
+	autoUpdate = true
 [alias]
 	s      = status --short
 	sb     = status --short --branch
