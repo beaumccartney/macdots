@@ -43,6 +43,8 @@
 	algorithm = histogram
 [extensions]
 	worktreeConfig = true
+[merge]
+	ff = only
 [pull]
 	ff = only
 [advice]
