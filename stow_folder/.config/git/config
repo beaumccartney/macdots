@@ -51,6 +51,7 @@
 	writeCommitGraph = true
 	prune = true
 	pruneTags = true
+	parallel = 0
 [rerere]
 	enabled = true
 	autoUpdate = true
