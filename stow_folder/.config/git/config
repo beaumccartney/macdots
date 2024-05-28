@@ -86,7 +86,7 @@
 	yr     = pull --rebase
 	p      = push
 	pf     = push --force-with-lease
-	fa     = fetch --all --prune
+	fa     = fetch --all
 
 	r      = remote -v
 
