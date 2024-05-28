@@ -78,10 +78,10 @@
 
 	d      = diff
 	ds     = diff --stat
-	dc     = diff --cached
-	dcs    = diff --cached --stat
+	dc     = diff --staged
+	dcs    = diff --staged --stat
 	dw     = diff --word-diff
-	dcw    = diff --cached --word-diff
+	dcw    = diff --staged --word-diff
 
 	y      = pull
 	yr     = pull --rebase
