@@ -62,6 +62,8 @@
 	sb     = status --short --branch
 	st     = status
 
+	cfd    = clean -fd
+
 	co     = checkout
 	cob    = checkout -b
 	b      = branch -vv
