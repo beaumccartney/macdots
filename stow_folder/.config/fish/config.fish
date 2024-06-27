@@ -12,6 +12,8 @@ set -x RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
 set -x PNPM_HOME "$HOME/Library/pnpm"
 set -x BUN_INSTALL "$HOME/.bun"
 
+set -x HOMEBREW_AUTO_UPDATE_SECS 86400
+
 eval (/opt/homebrew/bin/brew shellenv)
 
 # ensure these are prepended on $PATH
