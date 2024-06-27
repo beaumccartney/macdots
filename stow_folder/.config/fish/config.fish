@@ -10,6 +10,7 @@ set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -x RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
 
 set -x PNPM_HOME "$HOME/Library/pnpm"
+set -x BUN_INSTALL "$HOME/.bun"
 
 eval (/opt/homebrew/bin/brew shellenv)
 
@@ -19,7 +20,8 @@ fish_add_path   --move                                \
                 "(go env GOPATH)/bin"                 \
                 "$(brew --prefix llvm@18)/bin"        \
                 "$(brew --prefix python)/libexec/bin" \
-                "$PNPM_HOME"
+                "$PNPM_HOME"                          \
+                "$BUN_INSTALL/bin"
 
 # opam configuration
 source /Users/beaum/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
