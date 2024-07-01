@@ -3,3 +3,6 @@
 --smart-case
 
 --glob=!.git/
+
+--max-columns=150
+--max-columns-preview
