@@ -10,7 +10,7 @@
 [push]
 	default = current
 [github]
-	user = BeauSLM
+	user = beaumccartney
 [gitlab]
 	user = BeauSLM
 [filter "lfs"]
