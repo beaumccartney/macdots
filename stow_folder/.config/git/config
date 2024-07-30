@@ -24,7 +24,7 @@
 	pager = delta
 
 [commit]
-	verbose = 2
+	verbose = 1
 
 [interactive]
 	diffFilter = delta --color-only
