@@ -66,6 +66,7 @@
 
 	cfd    = clean -fd
 
+	sw     = switch
 	co     = checkout
 	cob    = checkout -b
 	b      = branch -vv
@@ -106,6 +107,7 @@
 	wd     = worktree remove
 
 	l      = log
+	lp     = log --patch
 	ls     = log --stat
 	lo     = log --oneline --decorate --color --graph
 
@@ -115,6 +117,7 @@
 	rbi    = rebase --interactive
 
 	z      = stash
+	zc     = stash clear
 	zp     = stash pop
 	zs     = stash show --patch
 	zl     = stash list
