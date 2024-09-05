@@ -3,3 +3,6 @@ node_modules
 *.dSYM/
 .next/
 .venv/
+.tup/
+out/
+.build/
