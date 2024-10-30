@@ -48,7 +48,7 @@ abbr gff 'git ff'
 abbr gnoff 'git noff'
 
 function dequarantine --wraps rm --description 'dequarantine passsed files/dirs'
-    sudo xattr -d -r com.apple.quarantine (dirname $argv)
+    sudo xattr -d -r com.apple.quarantine $argv
 end
 
 # >>> conda initialize >>>
