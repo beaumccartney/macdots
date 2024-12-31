@@ -23,6 +23,12 @@
 	compression = 0
 	pager = delta
 
+[status]
+	relativePaths = false
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+	submoduleSummary = true
 [commit]
 	verbose = 1
 
@@ -54,17 +60,36 @@
 	prune = true
 	pruneTags = true
 	parallel = 0
+[stash]
+	showIncludeUntracked = true
+	showPatch = true
+[submodule]
+	recurse = true
+	fetchJobs = 0
 [rerere]
 	enabled = true
 	autoUpdate = true
 [alias]
-	s      = status --short
-	sb     = status --short --branch
-	st     = status
+	s      = status
+	ss     = status --short
+	st     = status 
+	sv     = status -v
+	svv    = status -vv
+	si     = status --ignored=matching
+	sia    = status --ignored=traditional
+	sit    = status --ignored=traditional
+
+	sh     = show
 
 	h      = help
+	ha     = help --all
+	hc     = help --config
+	hg     = help --guides
+	hui    = help --user-interfaces
+	hdi    = help --developer-interfaces
 
-	cfd    = clean -fd
+	cl     = clean
+	clfd   = clean -fd
 
 	sw     = switch
 	co     = checkout
@@ -91,12 +116,15 @@
 	dcw    = diff --staged --word-diff
 
 	y      = pull
-	yr     = pull --rebase
+	yrb    = pull --rebase
 	p      = push
 	pf     = push --force-with-lease
+
+	f      = fetch
 	fa     = fetch --all
 
-	r      = remote -v
+	r      = remote
+	rv     = remote
 
 	w      = worktree
 	wa     = worktree add
@@ -111,6 +139,8 @@
 	ls     = log --stat
 	lo     = log --oneline --decorate --color --graph
 
+	sl     = shortlog
+
 	rb     = rebase
 	rba    = rebase --abort
 	rbc    = rebase --continue
@@ -119,5 +149,5 @@
 	z      = stash
 	zc     = stash clear
 	zp     = stash pop
-	zs     = stash show --patch
+	zs     = stash show
 	zl     = stash list
