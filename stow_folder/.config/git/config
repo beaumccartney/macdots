@@ -124,7 +124,7 @@
 	fa     = fetch --all
 
 	r      = remote
-	rv     = remote
+	rv     = remote -v
 
 	w      = worktree
 	wa     = worktree add
