@@ -22,6 +22,8 @@
 	longpaths = true
 	compression = 0
 	pager = delta
+	autocrlf=false
+	eol=lf
 
 [status]
 	relativePaths = false
