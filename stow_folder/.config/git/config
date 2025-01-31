@@ -72,7 +72,7 @@
 [alias]
 	s      = status
 	ss     = status --short
-	st     = status 
+	st     = status
 	sv     = status -v
 	svv    = status -vv
 	si     = status --ignored=matching
