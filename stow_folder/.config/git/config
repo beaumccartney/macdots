@@ -30,7 +30,6 @@
 	branch = true
 	showStash = true
 	showUntrackedFiles = all
-	submoduleSummary = true
 [commit]
 	verbose = 1
 
