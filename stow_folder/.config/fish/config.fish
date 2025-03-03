@@ -53,8 +53,6 @@ set fish_cursor_insert line
 
 set fish_color_command green --bold
 
-fnm env --use-on-cd | source
-
 zoxide init fish | source
 
 starship init fish | source
