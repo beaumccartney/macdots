@@ -3,12 +3,21 @@
 	name  = Beau McCartney
 	; NOTE: use this when I want to enforce setting email per-repo
 	; useConfigOnly  = true
+[feature]
+	manyFiles = true
 [init]
 	defaultBranch = main
+[checkout]
+	workers = -1
+	; thresholdForParallelism = 100 ; REVIEW
 [rebase]
 	autoStash = true
+	missingCommitsCheck = warn
 [push]
 	default = current
+	autoSetupRemote = true
+	followTags = true
+	; REVIEW: default = nothing
 [github]
 	user = beaumccartney
 [gitlab]
@@ -24,18 +33,22 @@
 	pager = delta
 	autocrlf=false
 	eol=lf
+	whitespace=error
+	preloadIndex=true
 
 [status]
 	relativePaths = false
 	branch = true
 	showStash = true
 	showUntrackedFiles = all
+[advice]
+	statusHints = false
 [commit]
 	verbose = 1
 
 [interactive]
 	diffFilter = delta --color-only
-
+	singlekey = true
 [delta]
 	navigate = true
 	features = side-by-side line-numbers decorations
@@ -48,6 +61,11 @@
 	mnemonicPrefix = true
 	renames = copies
 	algorithm = histogram
+	; REVIEW: interHunkContext
+[branch]
+	sort = -committerdate
+[tag]
+	sort = -taggerdate
 [extensions]
 	worktreeConfig = true
 [merge]
@@ -61,6 +79,10 @@
 	prune = true
 	pruneTags = true
 	parallel = 0
+[url "git@github.com:"]
+	insteadOf = "gh:"
+[url "git@github.com:beaumccartney/"]
+	insteadOf = "beau:"
 [stash]
 	showIncludeUntracked = true
 	showPatch = true
@@ -70,6 +92,8 @@
 [rerere]
 	enabled = true
 	autoUpdate = true
+[log]
+	abbrevCommit = true
 [alias]
 	s      = status
 	ss     = status --short
