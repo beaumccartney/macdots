@@ -64,6 +64,8 @@
 	; REVIEW: interHunkContext
 [branch]
 	sort = -committerdate
+[column]
+	ui = auto
 [tag]
 	sort = -taggerdate
 [extensions]
