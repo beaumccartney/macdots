@@ -5,3 +5,6 @@ Session.vim
 tags
 
 nvim-local.lua
+
+node_modules/
+.soupault-cache/
