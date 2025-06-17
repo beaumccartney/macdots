@@ -2,22 +2,22 @@ set fish_greeting
 
 bass eval "$(/usr/libexec/path_helper)"
 
-set -l NOCHECKIN_SCRIPT "$(status dirname)/nocheckin.fish"
+set --local NOCHECKIN_SCRIPT "$(status dirname)/nocheckin.fish"
 if test -f $NOCHECKIN_SCRIPT
 	source $NOCHECKIN_SCRIPT
 end
 
-set -x EDITOR "nvim"
-set -x VISUAL "nvim"
+set --export EDITOR "nvim"
+set --export VISUAL "nvim"
 
-set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+set --export MANPAGER "sh -c 'col -bx | bat --language man -p'"
 
-set -x RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
+set --export RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
 
 set --export BUN_INSTALL "$HOME/.bun"
-set -x PNPM_HOME "$HOME/Library/pnpm"
+set --export PNPM_HOME "$HOME/Library/pnpm"
 
-set -x HOMEBREW_AUTO_UPDATE_SECS 86400
+set --export HOMEBREW_AUTO_UPDATE_SECS 86400
 
 eval (/opt/homebrew/bin/brew shellenv)
 
@@ -35,7 +35,7 @@ alias mkdir 'mkdir -p'
 
 alias ls 'eza --oneline'
 alias la 'eza --all --oneline'
-alias ll 'eza -la --git'
+alias ll 'eza --long --all --git'
 alias lmr 'll --sort=time --reverse'
 
 abbr g 'git'
