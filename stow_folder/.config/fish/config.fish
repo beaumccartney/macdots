@@ -31,7 +31,7 @@ alias e $VISUAL
 
 alias fd "fd --hidden --no-ignore-vcs --follow"
 
-alias mkdir 'mkdir -p'
+alias mkdir 'mkdir -pv'
 
 alias ls 'eza --oneline'
 alias la 'eza --all --oneline'
