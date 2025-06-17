@@ -14,6 +14,7 @@ set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 set -x RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
 
+set --export BUN_INSTALL "$HOME/.bun"
 set -x PNPM_HOME "$HOME/Library/pnpm"
 
 set -x HOMEBREW_AUTO_UPDATE_SECS 86400
@@ -24,6 +25,7 @@ eval (/opt/homebrew/bin/brew shellenv)
 fish_add_path   --move                                \
                 "$HOME/.local/bin"                    \
                 "$PNPM_HOME"                          \
+                "$BUN_INSTALL/bin"
 
 alias e $VISUAL
 
