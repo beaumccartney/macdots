@@ -8,3 +8,5 @@ nvim-local.lua
 
 node_modules/
 .soupault-cache/
+
+**/.claude/settings.local.json
