@@ -119,6 +119,7 @@
 	clfd   = clean -fd
 
 	sw     = switch
+	swc    = switch --create
 	co     = checkout
 	cob    = checkout -b
 	b      = branch -vv
