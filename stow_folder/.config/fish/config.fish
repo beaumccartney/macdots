@@ -25,7 +25,8 @@ eval (/opt/homebrew/bin/brew shellenv)
 fish_add_path   --move                                \
                 "$HOME/.local/bin"                    \
                 "$PNPM_HOME"                          \
-                "$BUN_INSTALL/bin"
+                "$BUN_INSTALL/bin"                    \
+                "$HOME/.elan/bin"
 
 alias e $VISUAL
 
