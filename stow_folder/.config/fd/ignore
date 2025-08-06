@@ -12,3 +12,5 @@ target/
 *.xcodeproj/
 .ruff_cache/
 .soupault-cache
+.lake/
+.crush/
