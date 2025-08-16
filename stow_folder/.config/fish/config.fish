@@ -17,7 +17,6 @@ set --export RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PNPM_HOME "$HOME/Library/pnpm"
 
-set --export HOMEBREW_AUTO_UPDATE_SECS 86400
 
 eval (/opt/homebrew/bin/brew shellenv)
 
