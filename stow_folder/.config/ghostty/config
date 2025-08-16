@@ -4,5 +4,4 @@ font-size = 14
 
 quick-terminal-animation-duration = 0
 
-keybind = global:ctrl+space=toggle_quick_terminal
 keybind = shift+enter=text:\n
