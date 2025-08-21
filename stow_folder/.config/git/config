@@ -11,13 +11,14 @@
 	workers = -1
 	; thresholdForParallelism = 100 ; REVIEW
 [rebase]
+	autoSquash = true
 	autoStash = true
+	updateRefs = true
 	missingCommitsCheck = warn
 [push]
-	default = current
+	default = simple
 	autoSetupRemote = true
 	followTags = true
-	; REVIEW: default = nothing
 [github]
 	user = beaumccartney
 [gitlab]
@@ -35,6 +36,7 @@
 	eol=lf
 	whitespace=error
 	preloadIndex=true
+	fsmonitor = true
 
 [status]
 	relativePaths = false
@@ -54,20 +56,21 @@
 	features = side-by-side line-numbers decorations
 
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 
 [diff]
-	colorMoved = default
+	colorMoved = plain
 	mnemonicPrefix = true
 	renames = copies
 	algorithm = histogram
+	renames = true
 	; REVIEW: interHunkContext
 [branch]
 	sort = -committerdate
 [column]
 	ui = auto
 [tag]
-	sort = -taggerdate
+	sort = -version:refname
 [extensions]
 	worktreeConfig = true
 [merge]
@@ -96,6 +99,8 @@
 	autoUpdate = true
 [log]
 	abbrevCommit = true
+[help]
+	autoCorrect = prompt
 [alias]
 	s      = status
 	ss     = status --short
