@@ -1,8 +1,8 @@
 [user]
-	email = mccartney.beausl@gmail.com
+	; email = mccartney.beausl@gmail.com
 	name  = Beau McCartney
 	; NOTE: use this when I want to enforce setting email per-repo
-	; useConfigOnly  = true
+	useConfigOnly = true
 [feature]
 	manyFiles = true
 [init]
