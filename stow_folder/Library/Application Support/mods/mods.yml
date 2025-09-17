@@ -1,7 +1,7 @@
 # OpenAI compatible REST API (openai, localai, anthropic, ...)
-default-api: openai
+default-api: cerebras
 # Default model (gpt-3.5-turbo, gpt-4, ggml-gpt4all-j...)
-default-model: gpt-5-nano
+default-model: llama-4-scout-17b-16e-instruct
 # Text to append when using the -f flag
 format-text:
   markdown: 'Format the response as markdown without enclosing backticks.'
@@ -323,6 +323,8 @@ apis:
     api-key:
     api-key-env: CEREBRAS_API_KEY
     models: # https://inference-docs.cerebras.ai/introduction
+      llama-4-scout-17b-16e-instruct:
+        aliases: ["llama-4-scout-cerebras"]
       llama3.1-8b:
         aliases: ["llama3.1-8b-cerebras"]
         max-input-chars: 24500
