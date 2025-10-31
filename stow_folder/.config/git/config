@@ -35,7 +35,7 @@
 	eol=lf
 	whitespace=error
 	preloadIndex=true
-	fsmonitor = true
+	; fsmonitor = true
 
 [status]
 	relativePaths = false
