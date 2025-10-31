@@ -25,7 +25,8 @@ fish_add_path   --move                                \
                 "$HOME/.local/bin"                    \
                 "$PNPM_HOME"                          \
                 "$BUN_INSTALL/bin"                    \
-                "$HOME/.elan/bin"
+                "$HOME/.elan/bin"                     \
+                "$(go env GOPATH)/bin"
 
 alias e $VISUAL
 
