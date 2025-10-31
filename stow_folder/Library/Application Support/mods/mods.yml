@@ -76,17 +76,21 @@ apis:
     # api-key-cmd: rbw get -f OPENAI_API_KEY chat.openai.com
     models: # https://platform.openai.com/docs/models
       gpt-5:
-        aliases: ["5"]
-        max-input-chars: 400000
+        aliases: ["5", "gpt5" ]
+        max-input-chars: 794000
+        fallback: gpt-4o
       gpt-5-mini:
-        aliases: ["5-mini"]
+        aliases: ["5-mini", "gpt5mini"]
         max-input-chars: 400000
+        fallback: gpt-5
       gpt-5-nano:
-        aliases: ["5-nano"]
+        aliases: ["5-nano", "gpt5nano"]
+        max-input-chars: 200000
+        fallback: gpt-5-mini
+      gpt-5-codex:
+        aliases: ["5codex", "gpt5codex", "codex"]
         max-input-chars: 400000
-      gpt-5-chat:
-        aliases: ["5-chat"]
-        max-input-chars: 400000
+        fallback: gpt-5
       gpt-4.5-preview: #128k https://platform.openai.com/docs/models/gpt-4.5-preview
         aliases: ["gpt-4.5", "gpt4.5"]
         max-input-chars: 392000
