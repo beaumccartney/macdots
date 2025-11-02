@@ -17,6 +17,8 @@ set --export RIPGREP_CONFIG_PATH "$HOME/macdots/ripgrepconfig"
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PNPM_HOME "$HOME/Library/pnpm"
 
+# HACK: make things (install scripts, etc.) that detect shell with $SHELL work
+set --export SHELL fish
 
 eval (/opt/homebrew/bin/brew shellenv)
 
