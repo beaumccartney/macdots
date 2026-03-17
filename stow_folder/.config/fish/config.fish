@@ -2,11 +2,6 @@ set fish_greeting
 
 bass eval "$(/usr/libexec/path_helper)"
 
-set --local NOCHECKIN_SCRIPT "$(status dirname)/nocheckin.fish"
-if test -f $NOCHECKIN_SCRIPT
-	source $NOCHECKIN_SCRIPT
-end
-
 set --export EDITOR "nvim"
 set --export VISUAL "nvim"
 
