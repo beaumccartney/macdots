@@ -22,8 +22,7 @@ fish_add_path   --move                                \
                 "$HOME/.local/bin"                    \
                 "$PNPM_HOME"                          \
                 "$BUN_INSTALL/bin"                    \
-                "$HOME/.elan/bin"                     \
-                "$(go env GOPATH)/bin"
+                "$HOME/.elan/bin"
 
 alias e $VISUAL
 
@@ -61,6 +60,9 @@ fish_vi_cursor
 set fish_cursor_insert line
 
 set fish_color_command green --bold
+
+alias gvm 'g' # protect 'g' alias for git
+source "$HOME/.g/env.fish"
 
 zoxide init fish | source
 
