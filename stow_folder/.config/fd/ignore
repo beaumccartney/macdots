@@ -14,3 +14,4 @@ target/
 .soupault-cache
 .lake/
 .crush/
+*.app/
