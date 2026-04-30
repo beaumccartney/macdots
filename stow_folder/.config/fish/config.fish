@@ -1,7 +1,5 @@
 set fish_greeting
 
-bass eval "$(/usr/libexec/path_helper)"
-
 set --export EDITOR "nvim"
 set --export VISUAL "nvim"
 
