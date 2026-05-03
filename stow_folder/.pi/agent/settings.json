@@ -1,0 +1,10 @@
+{
+  "lastChangelogVersion": "0.72.1",
+  "defaultProvider": "github-copilot",
+  "defaultModel": "claude-haiku-4.5",
+  "defaultThinkingLevel": "medium",
+  "packages": [
+    "npm:pi-worktrunk",
+    "npm:@carter-mcalister/pi-worktrunk"
+  ]
+}
