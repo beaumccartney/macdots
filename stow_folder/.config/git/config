@@ -166,6 +166,13 @@
 	wr     = worktree remove
 	wd     = worktree remove
 
+	wt     = worktree
+	wta    = worktree add
+	wtls   = worktree list
+	wtp    = worktree prune
+	wtmv   = worktree move
+	wtrm   = worktree remove
+
 	l      = log
 	lp     = log --patch
 	ls     = log --stat
