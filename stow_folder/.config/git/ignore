@@ -15,3 +15,6 @@ node_modules/
 
 tags.lock
 tags.temp
+
+# used by agents
+PLAN.md
