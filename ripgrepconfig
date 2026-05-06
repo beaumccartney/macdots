@@ -1,9 +1,0 @@
---hidden
-
---smart-case
-
---no-ignore
---ignore-file=/Users/beaum/macdots/stow_folder/.config/fd/ignore
-
---max-columns=150
---max-columns-preview
