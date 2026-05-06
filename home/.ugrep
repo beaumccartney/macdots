@@ -1,0 +1,8 @@
+smart-case
+hidden
+exclude-dir=node_modules
+exclude-dir=.git
+exclude-dir=.next
+exclude=package-lock.json
+exclude=pnpm-lock.yaml
+ignore-binary

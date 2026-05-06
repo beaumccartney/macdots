@@ -1,0 +1,192 @@
+[user]
+	; email = mccartney.beausl@gmail.com
+	name  = Beau McCartney
+	; NOTE: use this when I want to enforce setting email per-repo
+	useConfigOnly = true
+[feature]
+	manyFiles = true
+[init]
+	defaultBranch = main
+[checkout]
+	workers = -1
+	; thresholdForParallelism = 100 ; REVIEW
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+	missingCommitsCheck = warn
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[github]
+	user = beaumccartney
+[gitlab]
+	user = BeauSLM
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	longpaths = true
+	pager = delta
+	autocrlf=false
+	eol=lf
+	whitespace=error
+	preloadIndex=true
+	; fsmonitor = true
+
+[status]
+	relativePaths = false
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+[advice]
+	statusHints = false
+[commit]
+	verbose = 1
+
+[interactive]
+	diffFilter = delta --color-only
+	singlekey = true
+[delta]
+	navigate = true
+	features = side-by-side line-numbers decorations
+
+[merge]
+	conflictstyle = zdiff3
+
+[diff]
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = copies
+	algorithm = histogram
+	renames = true
+	; REVIEW: interHunkContext
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[tag]
+	sort = -version:refname
+[extensions]
+	worktreeConfig = true
+[merge]
+	ff = only
+[pull]
+	ff = only
+[advice]
+	detachedHead = false
+[fetch]
+	writeCommitGraph = true
+	prune = true
+	pruneTags = true
+	parallel = 0
+[url "git@github.com:"]
+	insteadOf = "gh:"
+[url "git@github.com:beaumccartney/"]
+	insteadOf = "beau:"
+[stash]
+	showIncludeUntracked = true
+	showPatch = true
+[submodule]
+	recurse = true
+	fetchJobs = 0
+[rerere]
+	enabled = true
+	autoUpdate = true
+[log]
+	abbrevCommit = true
+[help]
+	autoCorrect = prompt
+[alias]
+	s      = status
+	ss     = status --short
+	st     = status
+	sv     = status -v
+	svv    = status -vv
+	si     = status --ignored=matching
+	sia    = status --ignored=traditional
+	sit    = status --ignored=traditional
+
+	sh     = show
+
+	h      = help
+	ha     = help --all
+	hc     = help --config
+	hg     = help --guides
+	hui    = help --user-interfaces
+	hdi    = help --developer-interfaces
+
+	cl     = clean
+	clfd   = clean -fd
+
+	sw     = switch
+	swc    = switch --create
+	co     = checkout
+	cob    = checkout -b
+	b      = branch -vv
+	ba     = branch -vva
+	bd     = branch --delete
+
+	a      = add
+	aa     = add --all
+	rs     = restore
+	rst    = restore --staged
+
+	c      = commit
+	ca     = commit --all
+	amend  = commit --amend
+	reword = commit --amend --only
+
+	d      = diff
+	ds     = diff --stat
+	dc     = diff --staged
+	dcs    = diff --staged --stat
+	dw     = diff --word-diff
+	dcw    = diff --staged --word-diff
+
+	y      = pull
+	yrb    = pull --rebase
+	p      = push
+	pf     = push --force-with-lease
+
+	f      = fetch
+	fa     = fetch --all
+
+	r      = remote
+	rv     = remote -v
+
+	w      = worktree
+	wa     = worktree add
+	wl     = worktree list
+	wp     = worktree prune
+	wm     = worktree move
+	wr     = worktree remove
+	wd     = worktree remove
+
+	wt     = worktree
+	wta    = worktree add
+	wtls   = worktree list
+	wtp    = worktree prune
+	wtmv   = worktree move
+	wtrm   = worktree remove
+
+	l      = log
+	lp     = log --patch
+	ls     = log --stat
+	lo     = log --oneline --decorate --color --graph
+
+	sl     = shortlog
+
+	rb     = rebase
+	rba    = rebase --abort
+	rbc    = rebase --continue
+	rbi    = rebase --interactive
+
+	z      = stash
+	zc     = stash clear
+	zp     = stash pop
+	zs     = stash show
+	zl     = stash list

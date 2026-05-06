@@ -1,0 +1,18 @@
+{
+  "lastChangelogVersion": "0.73.0",
+  "defaultProvider": "github-copilot",
+  "defaultModel": "claude-haiku-4.5",
+  "defaultThinkingLevel": "medium",
+  "packages": [
+    "npm:pi-worktrunk",
+    "npm:@carter-mcalister/pi-worktrunk"
+  ],
+  "enabledModels": [
+    "github-copilot/gemini-3-flash-preview",
+    "github-copilot/gemini-3.1-pro-preview",
+    "github-copilot/gemini-2.5-pro",
+    "github-copilot/gemini-3-pro-preview",
+    "github-copilot/gpt-5.2"
+  ],
+  "hideThinkingBlock": true
+}

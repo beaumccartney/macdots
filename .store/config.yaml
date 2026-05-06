@@ -1,0 +1,42 @@
+stores:
+    agents:
+        target: ~/.agents/
+    bat:
+        target: ~/.config/bat
+    fd:
+        target: ~/.config/fd
+    fish:
+        target: ~/.config/fish
+        files:
+            - config.fish
+            - fish_plugins
+    ghostty:
+        target: ~/.config/ghostty/
+    git:
+        target: ~/.config/git
+        when:
+          distro: macos
+    git-windows:
+        target: /asdf/foo
+        when:
+          distro: windows
+    kitty:
+        target: ~/.config/kitty
+    pi:
+        target: ~/.pi/agent/
+        files:
+            - AGENTS.md
+            - APPEND_SYSTEM.md
+            - settings.json
+    home:
+        target: "~"
+        files:
+            - .tokeignore
+            - .ugrep
+            - .zshrc
+    starship.toml:
+        target: ~/.config
+        files:
+            - starship.toml
+    yazi:
+        target: ~/.config/yazi

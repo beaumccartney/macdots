@@ -1,0 +1,20 @@
+*.dSYM
+*.DS_Store
+
+Session.vim
+tags
+
+nvim-local.lua
+
+node_modules/
+
+.soupault-cache/
+.cache/
+
+**/.claude/settings.local.json
+
+tags.lock
+tags.temp
+
+# used by agents
+PLAN.md

@@ -1,0 +1,17 @@
+.git/
+node_modules/
+*.dSYM/
+.next/
+.venv/
+.tup/
+out/
+build/
+.build/
+tags
+target/
+*.xcodeproj/
+.ruff_cache/
+.soupault-cache
+.lake/
+.crush/
+*.app/
