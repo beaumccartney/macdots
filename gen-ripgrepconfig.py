@@ -7,7 +7,7 @@ from pathlib import Path
 
 DOTFILES_DIR = Path(__file__).resolve().parent
 RIPGREPCONFIG_PATH = DOTFILES_DIR.joinpath("ripgrepconfig")
-FDIGNORE_PATH = DOTFILES_DIR.joinpath("stow_folder", ".config", "fd", "ignore")
+FDIGNORE_PATH = DOTFILES_DIR.joinpath("fd", "ignore")
 
 RIPGREPCONFIG_PATH.write_text(f"""--hidden
 
