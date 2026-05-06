@@ -13,5 +13,6 @@
     "github-copilot/gemini-2.5-pro",
     "github-copilot/gemini-3-pro-preview",
     "github-copilot/gpt-5.2"
-  ]
+  ],
+  "hideThinkingBlock": true
 }
