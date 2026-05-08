@@ -1,0 +1,2 @@
+# include function prototypes and goto labels in tags
+--kinds-C=+pL
