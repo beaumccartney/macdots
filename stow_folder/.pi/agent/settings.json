@@ -9,11 +9,10 @@
     "npm:pi-rtk-optimizer"
   ],
   "enabledModels": [
-    "github-copilot/gemini-3-flash-preview",
-    "github-copilot/gemini-3.1-pro-preview",
-    "github-copilot/gemini-2.5-pro",
-    "github-copilot/gemini-3-pro-preview",
-    "github-copilot/gpt-5.2"
+    "github-copilot/gpt-5.4-mini",
+    "openai-codex/gpt-5.4",
+    "openai-codex/gpt-5.5",
+    "openai-codex/gpt-5.3-codex"
   ],
   "hideThinkingBlock": true
 }
