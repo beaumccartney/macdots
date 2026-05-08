@@ -5,7 +5,8 @@
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:pi-worktrunk",
-    "npm:@carter-mcalister/pi-worktrunk"
+    "npm:@carter-mcalister/pi-worktrunk",
+    "npm:pi-rtk-optimizer"
   ],
   "enabledModels": [
     "github-copilot/gemini-3-flash-preview",
