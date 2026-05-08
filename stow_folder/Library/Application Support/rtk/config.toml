@@ -1,0 +1,32 @@
+# [filters]
+# ignore_dirs = [
+#     "*.dSYM",
+#     "*.xcodeproj",
+#     ".build",
+#     ".cache",
+#     ".crush",
+#     ".git",
+#     ".lake",
+#     ".next",
+#     ".ruff_cache",
+#     ".venv",
+#     "__pycache__",
+#     "build",
+#     "node_modules",
+#     "out",
+#     "target",
+# ]
+# ignore_files = [
+#     "*.DS_Store",
+#     "*.lock",
+#     "*.min.css",
+#     "*.min.js",
+#     "Session.vim",
+#     "nvim-local.lua",
+#     "tags",
+#     "tags.lock",
+#     "tags.temp",
+# ]
+
+[telemetry]
+enabled = false
