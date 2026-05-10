@@ -5,8 +5,7 @@
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:pi-worktrunk",
-    "npm:@carter-mcalister/pi-worktrunk",
-    "npm:pi-rtk-optimizer"
+    "npm:@carter-mcalister/pi-worktrunk"
   ],
   "enabledModels": [
     "github-copilot/gpt-5.4-mini",
