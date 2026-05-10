@@ -1,0 +1,4 @@
+[aliases]
+ls = "wt list {{ args }}"
+sw = "wt switch {{ args }}"
+rm = "wt remove {{ args }}"
