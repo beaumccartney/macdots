@@ -1,0 +1,2 @@
+[aw-watcher-window]
+exclude_titles = ["loginwindow"]
